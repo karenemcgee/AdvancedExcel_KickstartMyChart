@@ -37,46 +37,54 @@ Using the Excel table provided, modified and analyzed the data of 4,000 past Kic
   * Created a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `parent category` and `Years`.
 
   * Created a pivot chart line graph that visualized this new table.
+  
+  * Created a new sheet with 8 columns:
+    * `Goal`
+    * `Number Successful`
+    * `Number Failed`
+    * `Number Canceled`
+    * `Total Projects`
+    * `Percentage Successful`
+    * `Percentage Failed`
+    * `Percentage Canceled`
 
-* Created a report in Microsoft Word to answer the following questions.
+  * In the `Goal` column, created 12 rows with the following headers:
+    * Less than 1000
+    * 1000 to 4999
+    * 5000 to 9999
+    * 10000 to 14999
+    * 15000 to 19999
+    * 20000 to 24999
+    * 25000 to 29999
+    * 30000 to 34999
+    * 35000 to 39999
+    * 40000 to 44999
+    * 45000 to 49999
+    * Greater than or equal to 50000
+
+  * Using the `COUNTIFS()` formula, counted how many successful, failed, and canceled projects were created with goals within the ranges listed above. Populated the `Number Successful`, `Number Failed`, and `Number Canceled` columns with this data.
+
+  * Added up each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns to populate the `Total Projects` column. Then, using a mathematical formula, found the percentage of projects that were successful, failed, or canceled per goal range.
+
+  * Created a line chart that graphed the relationship between a goal's amount and its chances at success, failure, or cancellation.
+  
+## Analysis
 
 1. Given the provided data, what are three conclusions we can draw about Kickstarter campaigns?
+   1.	Theater projects are by far the most common type of project as well as the most successful as a parent category.
+   2.	Web projects are the most canceled type of project in the Technology parent category.
+   3.	Projects whose goals are less than $1,000 are the most successful.
+
 2. What are some limitations of this dataset?
+   1.	The data does not tell us why the projects were unsuccessful other than providing correlations with some concrete categories (ie dollar amounts, dates, etc).
+   2.	It does not include much demographic data about donors and projects other than the country from which the project originated.
+   3.	It does not go into whether or not projects were fulfilled.
+   4.	It does not provide data on whether or not this was the project creator’s first project and, if it wasn’t their first project, whether or not previous projects were successful.
+
 3. What are some other possible tables and/or graphs that we could create?
-
-## Bonus
-
-* Create a new sheet with 8 columns:
-
-  * `Goal`
-  * `Number Successful`
-  * `Number Failed`
-  * `Number Canceled`
-  * `Total Projects`
-  * `Percentage Successful`
-  * `Percentage Failed`
-  * `Percentage Canceled`
-
-* In the `Goal` column, create 12 rows with the following headers:
-
-  * Less than 1000
-  * 1000 to 4999
-  * 5000 to 9999
-  * 10000 to 14999
-  * 15000 to 19999
-  * 20000 to 24999
-  * 25000 to 29999
-  * 30000 to 34999
-  * 35000 to 39999
-  * 40000 to 44999
-  * 45000 to 49999
-  * Greater than or equal to 50000
-
-* Using the `COUNTIFS()` formula, count how many successful, failed, and canceled projects were created with goals within the ranges listed above. Populate the `Number Successful`, `Number Failed`, and `Number Canceled` columns with this data.
-
-* Add up each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns to populate the `Total Projects` column. Then, using a mathematical formula, find the percentage of projects that were successful, failed, or canceled per goal range.
-
-* Create a line chart that graphs the relationship between a goal's amount and its chances at success, failure, or cancellation.
+   1.	Total amount pledged by category and sub-category
+   2.	State of project based on whether or not the project was in the spotlight
+   3.	Average donation based on which country the project was created from
 
 - - -
 
